@@ -1,0 +1,20 @@
+#background {
+  width: 100vw;
+  height: 85vh;
+}
+
+.navbar-custom {
+  background-color: #111823;
+}
+
+.navbar-custom a {
+  color: #ffffff;
+}
+
+.navbar-custom a:hover {
+  color: #ff4654;
+}
+
+.navbar-brand {
+  font-family: "VALORANT", sans-serif;
+}
