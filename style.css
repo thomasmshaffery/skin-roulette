@@ -1,6 +1,10 @@
 #background {
-  width: 100vw;
+  width: 100%;
   height: 85vh;
+}
+
+h5 {
+  font-family: "VALORANT", sans-serif;
 }
 
 .navbar-custom {
@@ -17,4 +21,8 @@
 
 .navbar-brand {
   font-family: "VALORANT", sans-serif;
+}
+
+#footer {
+  border-color: #ff4654;
 }
