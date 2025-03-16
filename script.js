@@ -1,10 +1,14 @@
+/**
+ * Setting the background DOM
+ */
 const animatedBackground = document.getElementById("background");
 
 /**
  * Gun skin retrieval
  */
-
 let guns = [];
+let cardOne;
+let cardTwo;
 
 async function getGuns() {
   const url = `https://valorant-api.com/v1/weapons/skins`;
@@ -23,7 +27,8 @@ async function getGuns() {
   } catch (error) {
     console.error(error);
   }
-  console.log(guns);
+
+  displayCards();
 }
 
 function generateGuns(Object) {
@@ -36,4 +41,28 @@ function generateGuns(Object) {
   if (Object.displayIcon != null) {
     guns.push(gun);
   }
+}
+
+/**
+ * Displaying Cards
+ */
+
+function getRandomGun() {
+  return guns[Math.floor(Math.random() * guns.length)];
+}
+
+function getCardImage(card) {
+  return card.image;
+}
+
+function displayCards() {
+  cardOne = getRandomGun();
+  cardTwo = getRandomGun();
+
+  while (cardOne.uuid == cardTwo.uuid) {
+    setCard(cardTwo);
+  }
+
+  document.images[0].src = cardOne.image;
+  document.images[1].src = cardTwo.image;
 }
