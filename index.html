@@ -27,7 +27,7 @@
     <!-- CSS Linking -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- JavaScript Linking -->
+    <!-- JavaScript Linking & API Call-->
     <script src="script.js"></script>
 
     <!-- Valorant Font -->
@@ -39,7 +39,7 @@
   <body>
     <nav class="navbar navbar-custom">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#" onclick="getGuns()">SKIN ROULETTE</a>
+        <a class="navbar-brand" href="#">SKIN ROULETTE</a>
       </div>
     </nav>
 
@@ -48,18 +48,33 @@
       <!-- Container -->
       <div class="container px-4">
         <!-- Row -->
-        <div class="row gx-10">
+        <div class="row gx-15">
           <!-- Col -->
           <div class="col">
-            <div class="card">
-              <img src="..." class="card-img" alt="..." id="cardOneImage" />
+            <div class="card text-center">
+              <div class="card-title" id="titleOne">Test</div>
+              <img
+                src="..."
+                class="card-img"
+                alt="..."
+                id="cardOneImage"
+                onclick="displayCards()"
+              />
             </div>
+
             <!-- Col -->
           </div>
           <!-- Col -->
           <div class="col">
-            <div class="card">
-              <img src="..." class="card-img" alt="..." id="cardTwoImage" />
+            <div class="card text-center">
+              <div class="card-title" id="titleTwo">Test</div>
+              <img
+                src="..."
+                class="card-img"
+                alt="..."
+                id="cardTwoImage"
+                onclick="displayCards()"
+              />
             </div>
             <!-- Col -->
           </div>

@@ -1,5 +1,9 @@
 /**
- * Setting the background DOM
+ * Load API Call on site
+ */
+window.onload = getGuns();
+/**
+ * Set DOM variables
  */
 const animatedBackground = document.getElementById("background");
 
@@ -65,4 +69,10 @@ function displayCards() {
 
   document.images[0].src = cardOne.image;
   document.images[1].src = cardTwo.image;
+
+  const oneTitle = document.getElementById("titleOne");
+  const twoTitle = document.getElementById("titleTwo");
+
+  oneTitle.innerHTML = cardOne.name;
+  twoTitle.innerHTML = cardTwo.name;
 }
