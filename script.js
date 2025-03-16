@@ -42,7 +42,11 @@ function generateGuns(Object) {
     image: Object.displayIcon,
   };
 
-  if (Object.displayIcon != null) {
+  if (
+    Object.displayIcon != null &&
+    Object.displayName != "Random Favorite Skin" &&
+    Object.displayName.includes("Standard") == false
+  ) {
     guns.push(gun);
   }
 }
